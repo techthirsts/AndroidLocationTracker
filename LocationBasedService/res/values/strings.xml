@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationBasedService</string>
+    <string name="hello_world">Hello world!</string>
+   <string name="get_location">Get Location</string>
+    <string name="disconnect">Disconnect Service</string>
+    <string name="connect">Connect Service</string>
+     <string name="signin">----------------Sign In-----------------</string>
+    <string name="user">User Name</string>
+    <string name="password">Password</string>
+    <string name="sign">Sign In</string>
+    <string name="signup">Create an Account</string>
+    <string name="clear">Clear</string>
+    <string name="welcome">Welcome, User</string>
+    <string name="location">Location</string>
+    <string name="load">Loading location..</string>
+    <string name="track">Information to Track...</string>
+    <string name="tracklist">Tracking List</string>
+    <color name="cp_text">#3B16F3</color>
+    <color name="titlebackgroundcolor">#3232CD</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.locationbasedservice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         android:theme="@android:style/Theme.Holo.Light.DarkActionBar" 
+       >
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+         <service
+                 android:name="com.example.locationbasedservice.TrackService"
+                 android:process=":remote">
+         <intent-filter>
+        <action
+          android:name="com.example.locationbasedservice.TrackService" />
+      </intent-filter>
+    </service>
+  
+         <activity
+            android:name="com.example.locationbasedservice.MainActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.locationbasedservice.Signin"
+            android:label="@string/sign">
+        </activity>
+         <activity
+            android:name="com.example.locationbasedservice.Signup"
+            android:label="@string/signup">
+        </activity>
+         <activity
+            android:name="com.example.locationbasedservice.LocationService"
+            android:label="@string/location">
+        </activity>
+        <activity
+            android:name="com.example.locationbasedservice.Load"
+            android:label="@string/load">
+        </activity>
+        <activity
+            android:name="com.example.locationbasedservice.tracklist"
+            android:label="@string/tracklist">
+        </activity>
+        <activity
+            android:name="com.example.locationbasedservice.track"
+            android:label="@string/track">
+        </activity>
+    </application>
+</manifest>
